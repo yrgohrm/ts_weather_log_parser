@@ -40,6 +40,7 @@ public final class WeatherLogParser {
      * 2025-08-07T10:00:00Z,22.5,58.3
      * 2025-08-07T11:00:00Z,NaN,60.1
      * 
+     * @param stationId The Wigos Station ID of the station that generated the file
      * @param logLines A list of strings, where each string is a line from a log
      *                 file.
      * @return A ParsingResult object containing both the successful readings and
@@ -51,7 +52,7 @@ public final class WeatherLogParser {
 
         List<Observation> successfulReadings = new ArrayList<>();
         List<ParserError> errorMessages = new ArrayList<>();
-        AtomicInteger lineCount = new AtomicInteger(0);
+        AtomicInteger lineCount = new AtomicInteger(1);
 
         logLines.forEach(line -> {
             int currentLineNumber = lineCount.addAndGet(1);

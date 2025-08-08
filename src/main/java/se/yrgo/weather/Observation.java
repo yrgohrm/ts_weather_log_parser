@@ -38,7 +38,8 @@ public record Observation(
     }
 
     /**
-     * Returns true if some of the readings, but not all, in this observation is invalid/faulty.
+     * Returns true if some of the readings, but not all, in this observation is
+     * invalid/faulty.
      * 
      * @return true if some, but not all, readings are invalid, false otherwise.
      */
@@ -46,7 +47,6 @@ public record Observation(
         return !isValid() && !isInvalid();
     }
 
-    
     /**
      * Returns true if all readings in this observation is valid.
      * 

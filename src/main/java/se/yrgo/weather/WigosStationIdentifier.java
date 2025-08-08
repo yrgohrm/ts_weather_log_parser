@@ -12,7 +12,7 @@ import java.util.Objects;
  *  WIGOSIdentifierSeries: 0
  *  IssuerOfIdentifier: 0-65534
  *  IssueNumber: 0-65534
- *  LocalIdentifier: 16 characters, no "-"
+ *  LocalIdentifier: 16 alphanumeric characters
  * 
  * Example (SMHI Gunnarn): 0-20000-0-02126
  *

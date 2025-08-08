@@ -23,9 +23,6 @@ target/
 
 .jqwik-database
 
-# for this workshop I do not want to accidently commit any tests
-test/
-
 # VS Code Settings
 .vscode/
 .mvn/
